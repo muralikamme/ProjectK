@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     h1,h2,h3,h4{
+        display: inline-block;
+        background-color: aqua;
+        transition-property: all;
+
+
+      }
+      
+
+      
+       h1:hover~img{
+        
+        transform: translate(100px);
+        transition: all;
+        transition-duration: 3s;
+        }
+       h2:hover~img {
+        transform: scale(1.5);
+        transition: all;
+        transition-duration: 3s;
+
+        }
+        
+       h3:hover~img {
+        transform: rotate(350deg);
+        transition: all;
+        transition-duration: 4s;
+    }
+    h4:hover~img{
+        transform: skew(300deg);
+        transition: all;
+        transition-duration: 5s;
+
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <h1>translate</h1>
+    <h2>scale</h2>
+    <h3>rotate</h3>
+    <h4>Skew</h4>
+   <img src="./house2.jpg">
+</body>
+</html>
